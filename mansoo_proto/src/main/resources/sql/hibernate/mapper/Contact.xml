@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="mansoo.board.data.Contact" table="Contact">
+        <id name="id" type="int">
+            <column name="CONTACT_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="30" not-null="false" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="30" not-null="false" />
+        </property>
+        <property name="telephone" type="string">
+            <column name="TELEPHONE" length="15" not-null="false" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="30" not-null="false" />
+        </property>
+        <property name="created" type="timestamp">
+            <column name="CREATED" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>

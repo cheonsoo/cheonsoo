@@ -1,0 +1,19 @@
+.topDiv div {
+	display: inline;
+}
+.topNavi ul li {
+	display: inline
+}
+
+.input_div input {
+	width: 150px;
+}
+
+.input {
+	width: 150px;
+}
+
+.loginDiv div {
+	text-align: right;
+	display: inline;
+}
